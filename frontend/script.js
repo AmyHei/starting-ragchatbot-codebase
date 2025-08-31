@@ -30,8 +30,12 @@ function setupEventListeners() {
         if (e.key === 'Enter') sendMessage();
     });
     
-    // New Chat button
-    newChatButton.addEventListener('click', createNewSession);
+    // New chat functionality
+    newChatButton.addEventListener('click', () => {
+        createNewSession();
+        chatInput.focus();
+    });
+
     
     // Suggested questions
     document.querySelectorAll('.suggested-item').forEach(button => {
