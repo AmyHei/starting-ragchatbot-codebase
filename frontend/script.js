@@ -35,7 +35,7 @@ function setupEventListeners() {
         createNewSession();
         chatInput.focus();
     });
-    
+
     
     // Suggested questions
     document.querySelectorAll('.suggested-item').forEach(button => {
